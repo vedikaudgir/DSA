@@ -1,3 +1,6 @@
+//Program to implement BST in cpp.
+//Author - Vedika Udgir 
+
 #include <stdio.h>
 #include <stdlib.h>
 
