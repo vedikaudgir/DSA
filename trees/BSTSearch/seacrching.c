@@ -1,3 +1,6 @@
+//Program to implement search in Binary Search Tree in C.
+//Author - Vedika Udgir
+
 #include <stdio.h>
 #include <stdlib.h>
 
