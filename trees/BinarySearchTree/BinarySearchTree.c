@@ -1,4 +1,4 @@
-//Program to implement BST in cpp.
+//Program to implement BST in c.
 //Author - Vedika Udgir 
 
 #include <stdio.h>
