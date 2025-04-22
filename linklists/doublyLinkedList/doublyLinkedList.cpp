@@ -1,3 +1,6 @@
+//Program to implement a doubly Linked List in Cpp.
+//Author - Vedika Udgir.
+
 #include <iostream>
 using namespace std;
 
