@@ -9,33 +9,34 @@ private:
         int data;
         struct Node *leftChild;
         struct Node *rightChild;
+
+        Node(int value)
+        {
+            data = value;
+            leftChild = NULL;
+            rightChild = NULL;
+        }
     } node;
 
-    public:
-    
     node *root = NULL;
-    node *insertNode(node *root, char d)
+    node *insertNode(node *root, int value)
     {
         if (root == NULL)
         {
-            node *newNode = (node *)malloc(sizeof(node));
-            newNode->data = d;
-            newNode->leftChild = NULL;
-            newNode->rightChild = NULL;
-            return newNode;
+            return new Node(value);
         }
-
-        if (d < root->data)
+        
+        if (value < root->data)
         {
-            root->leftChild = insertNode(root->leftChild, d);
+            root->leftChild = insertNode(root->leftChild, value);
         }
-        else if (d > root->data)
+        else if (value > root->data)
         {
-            root->rightChild = insertNode(root->rightChild, d);
+            root->rightChild = insertNode(root->rightChild, value);
         }
         return root;
     }
-
+    
     void printInorder(node* root)
     {
         if (root == NULL)
@@ -45,6 +46,18 @@ private:
         printInorder(root->leftChild);
         printf("%4d", root->data);
         printInorder(root->rightChild);
+    }
+    
+    public:
+
+    void insertNode(int value)
+    {
+        root = insertNode(root, value);
+    }
+    void printTree()
+    {
+        cout << "\nThe tree is: \n";
+        printInorder(root);
     }
 
     BinarySearchTree() 
@@ -57,12 +70,14 @@ private:
 int main()
 {
     BinarySearchTree myTree;
-    myTree.root = myTree.insertNode(myTree.root, 1);
-    myTree.root = myTree.insertNode(myTree.root, 20);
-    myTree.root = myTree.insertNode(myTree.root, 30);
-    myTree.root = myTree.insertNode(myTree.root, 15);
-    myTree.root = myTree.insertNode(myTree.root, 7);
-    myTree.root = myTree.insertNode(myTree.root, 2);
-    myTree.root = myTree.insertNode(myTree.root, 100);
-    myTree.printInorder(myTree.root);
+    myTree.insertNode(10);
+    myTree.insertNode(100);
+    myTree.insertNode(107);
+    myTree.insertNode(170);
+    myTree.insertNode(710);
+    myTree.insertNode(120);
+    myTree.insertNode(210);
+
+    myTree.printTree();
+
 }
