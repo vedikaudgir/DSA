@@ -1,3 +1,6 @@
+//Program to implement a singly Linked List in Cpp.
+//Author - Vedika Udgir.
+
 #include <iostream>
 #include <stdlib.h>
 using namespace std;
