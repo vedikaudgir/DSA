@@ -1,3 +1,6 @@
+//Program to implement a singly Linked List in C.
+//Author - Vedika Udgir.
+
 #include <stdio.h>
 #include <stdlib.h>
 
