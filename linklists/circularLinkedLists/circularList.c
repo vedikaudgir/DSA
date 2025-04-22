@@ -1,3 +1,6 @@
+//Code to implementcircular Linked List.
+//Author - Vedika Udgir
+
 #include <stdio.h>
 #include <stdlib.h>
 
