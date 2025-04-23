@@ -1,3 +1,6 @@
+//Program to print tree in Inorder.
+//Author - Vedika Udgir.
+
 #include <stdio.h>
 #include <stdlib.h>
 
