@@ -1,3 +1,6 @@
+//Program to implement preorder traversal in tree.
+//Author - Vedika Udgir.
+
 #include <stdio.h>
 #include <stdlib.h>
 
