@@ -1,3 +1,6 @@
+//Program to implement postorder traversal in Tree.
+//Author - Vedika Udgir
+
 #include <stdio.h>
 #include <stdlib.h>
 
