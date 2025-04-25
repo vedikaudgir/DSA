@@ -1,3 +1,6 @@
+//Program to implement Tower of Hanoi problem in C.
+//Author - Vedika Udgir 
+
 #include <stdio.h>
 
 void towerOfHanoi(int n, char fromRod, char toRod, char auxRod) {
