@@ -1,3 +1,6 @@
+//Header File to store all the functions for operations on a stack.
+//Author - Vedika Udgir
+
 #include <stdio.h>
 #define MAX 10
 
