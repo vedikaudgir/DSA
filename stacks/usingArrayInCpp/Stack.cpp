@@ -1,3 +1,6 @@
+//Code to implement Stack Data Structure in cpp.
+//Author - Vedika Udgir.
+
 #include <iostream>
 using namespace std;
 
